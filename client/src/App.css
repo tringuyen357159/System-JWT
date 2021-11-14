@@ -1,0 +1,24 @@
+
+.login-container {
+  height: 100vh;
+  position: relative;
+}
+
+.login-content {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.login-content form {
+  width: 30%;
+}
+
+.login-content h1 {
+  color: white;
+}

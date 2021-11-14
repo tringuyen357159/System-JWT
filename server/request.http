@@ -1,0 +1,25 @@
+POST http://localhost:5000/api/auth/login
+Content-Type: application/json
+
+{
+    "username": "tringuyen",
+    "password": "123456"
+}
+
+###
+
+POST http://localhost:5000/api/auth/refreshtoken
+Content-Type: application/json
+
+{
+   "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MTg0MTA0OTUwNmFjMDM0OGZjNDM2ZDgiLCJ1c2VybmFtZSI6InRyaW5ndXllbiIsImlhdCI6MTYzNjkwMDUzOX0.GjFxe0Zyik8FdlAbIMtD8vXx94k8SfVUNAfCsX988b4"
+}
+
+###
+
+POST http://localhost:5000/api/auth/logout
+Content-Type: application/json
+
+{
+   "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MTg0MTA0OTUwNmFjMDM0OGZjNDM2ZDgiLCJ1c2VybmFtZSI6InRyaW5ndXllbiIsImlhdCI6MTYzNjY3ODg5NH0.zK1jb7_aVY2cB1Uwp1AzV-TbKrsR4T5_WxzbW3wfMvI"
+}
