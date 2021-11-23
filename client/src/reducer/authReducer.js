@@ -13,6 +13,7 @@ const userReducer = (state = initialState, action) => {
     switch (action.type){
         case 'LOGIN_USER_SUCCESS':
             const user = jwtDecode(action.payload.accessToken)
+            localStorage.setItem('USER_TOKEN', JSON.stringify(action.payload.accessToken));
             return {
                 ...state,
                 isLoading: false,
@@ -23,6 +24,7 @@ const userReducer = (state = initialState, action) => {
                 id: user.userId
             }
         case 'LOGOUT_USER_SUCCESS':
+            localStorage.removeItem('USER_TOKEN');
             return {
                 ...state,
                 isLogin: false,
