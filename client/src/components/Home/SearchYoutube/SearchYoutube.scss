@@ -38,3 +38,10 @@
         background-color: #e2e2e2;
     }
 }
+
+.youtube__item {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    flex-direction: row;
+}

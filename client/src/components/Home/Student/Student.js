@@ -139,10 +139,10 @@ const Student = () => {
                         <SearchBlog handleSearch={handleSearchStudent} />
                     </Col>
                     <Col md="3">
-                        <StudentFilterCity handleFilterByCity= {handleFilterByCity} />
+                        <StudentFilterCity handleFilterByCity={handleFilterByCity} />
                     </Col>
                     <Col md="3">
-                        <StudentFilterMark handleFilterByMark= {handleFilterByMark} />
+                        <StudentFilterMark handleFilterByMark={handleFilterByMark} />
                     </Col>
                     <Col md="1">
                         <Button
@@ -200,7 +200,7 @@ const Student = () => {
                             })
                         }
                     </tbody>
-                </Table>
+                </Table> 
                 <div className="justify-content-center" style={{display: 'flex'}}>
                     <Pagination pagination={pagination} onPageChange={onPageChange} />
                 </div>

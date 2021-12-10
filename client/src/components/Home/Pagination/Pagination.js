@@ -19,7 +19,6 @@ const Pagination = (props) => {
         ));
     }else {
         const startValue = Math.floor((_page - 1) / 5) * 5;
-        console.log(startValue);
     
         middlePagination = (
           <>

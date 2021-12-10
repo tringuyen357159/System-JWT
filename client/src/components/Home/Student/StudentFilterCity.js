@@ -22,7 +22,7 @@ const StudentFilterCity = (props) => {
             value={city}
             name="city"
         >
-            <option value="">Filter by city</option>
+            <option value="" disabled selected>Filter by city</option>
             {studentList.cityList && studentList.cityList.length > 0 &&
                 studentList.cityList.map((item, index) => {
                     return (

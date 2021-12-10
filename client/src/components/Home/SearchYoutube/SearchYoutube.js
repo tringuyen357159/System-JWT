@@ -42,6 +42,12 @@ const SearchYoutube = () => {
         }
     }
 
+    const handleKeyDown = (e) => {
+        if(e.key === 'Enter' || e.keyCode === 13){
+            handleSearchYoutube();
+        }
+    }
+  
     return (
         <>
             <NavbarMenu />
@@ -52,6 +58,7 @@ const SearchYoutube = () => {
                         placeholder="Tìm kiếm"
                         value={search}
                         onChange={(e) => setSearch(e.target.value)}
+                        onKeyDown={(e) => handleKeyDown(e)}
                     />
                     <button 
                         type="button"

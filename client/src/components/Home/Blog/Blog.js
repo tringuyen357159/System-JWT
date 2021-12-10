@@ -8,6 +8,7 @@ import { fetchPostSuccess } from '../../../actions/postAction';
 import Pagination from '../Pagination/Pagination';
 import { Spinner } from 'react-bootstrap';
 import SearchBlog from '../SearchBlog/SearchBlog';
+import { useHistory } from 'react-router-dom';
 
 const Blog = () => {
     const [filters, setFilters] = useState({
@@ -22,6 +23,7 @@ const Blog = () => {
     const dispatch = useDispatch()
     const postList = useSelector(state => state.postList);
     const [isloading, setIsLoading] = useState(true);
+    const history = useHistory();
 
     useEffect(() => {
         const fetchPostList = async () => {
@@ -55,6 +57,10 @@ const Blog = () => {
         })
     }
 
+    const handleOnClick = (id) => {
+        history.push(`/blog/${id}`)
+    }
+
     return (
         <>
             <NavbarMenu />
@@ -78,7 +84,12 @@ const Blog = () => {
                         {postList.postList && postList.postList.length > 0 &&
                             postList.postList.map(item => {
                                 return (
-                                    <div className="blog-container__item" key={item.id}>
+                                    <div 
+                                        className="blog-container__item" 
+                                        key={item.id}
+                                        onClick={() => handleOnClick(item.id)}
+                                        style={{cursor: 'pointer'}}
+                                    >
                                         <img 
                                             src={item.imageUrl}
                                             alt=""

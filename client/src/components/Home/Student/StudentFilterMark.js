@@ -23,7 +23,7 @@ const StudentFilterMark = (props) => {
             value={mark}
             name="city"
         >
-            <option value="">No sort</option>
+            <option value="" disabled selected>No sort</option>
             <option value="mark.asc">Mark ASC</option>
             <option value="mark.desc">Mark DESC</option>
         </Form.Select>

@@ -4,6 +4,7 @@ const mongoose = require('mongoose');
 const core = require('cors');
 const app = express();
 const routeAuth = require('./router/Auth');
+const routeStudent = require('./router/Student');
 
 const connectDB = async () => {
     try {
@@ -22,6 +23,7 @@ app.use(express.json());
 app.use(core());
 
 app.use('/api/auth', routeAuth)
+app.use('/api/student', routeStudent)
 
 connectDB();
 

@@ -14,6 +14,8 @@ import Student from "./components/Home/Student/Student";
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import AuthRoute from "./components/HOC/AuthRoute";
+import { StudentAPI } from "./components/Home/Student/StudentAPI";
+import DetailBlog from "./components/Home/Blog/DetailBlog";
 
 function App() {
 
@@ -25,7 +27,9 @@ function App() {
         <AuthRoute exact path="/search-youtube" component={SearchYoutube} />
         <AuthRoute exact path="/google-map" component={GoogleMap} />
         <AuthRoute exact path="/blog" component={Blog} />
+        <AuthRoute exact path="/blog/:id" component={DetailBlog} />
         <AuthRoute exact path="/student" component={Student} />
+        <AuthRoute exact path="/studentAPI" component={StudentAPI} />
       </Switch>
       <ToastContainer
         position="top-right"

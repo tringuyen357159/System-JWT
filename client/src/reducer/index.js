@@ -6,6 +6,7 @@ import storage from 'redux-persist/lib/storage';
 import autoMergeLevel2 from 'redux-persist/lib/stateReconciler/autoMergeLevel2';
 import postReducer from './postReducer';
 import studentReducer from './studentReducer';
+import studentApiReducer from './studentApiReducer';
 
 const persistCommonConfig = {
     storage: storage,
@@ -23,6 +24,7 @@ const rootReducer = (history) => combineReducers({
     user: persistReducer(userPersistConfig, userReducer),
     postList: postReducer,
     studentList: studentReducer,
+    student: studentApiReducer,
 })
 
 export default rootReducer

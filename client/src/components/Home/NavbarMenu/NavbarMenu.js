@@ -31,6 +31,9 @@ const NavbarMenu = () => {
                     <Nav.Link className="font-weight-bolder text-white" to="/student" as={Link}>
                         Student
                     </Nav.Link>
+                    <Nav.Link className="font-weight-bolder text-white" to="/studentAPI" as={Link}>
+                        Student API
+                    </Nav.Link>
                 </Nav>
 
                 <Nav>

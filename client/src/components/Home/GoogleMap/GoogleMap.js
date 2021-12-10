@@ -22,7 +22,7 @@ const GoogleMap = () => {
                     {...viewport} 
                     onViewportChange={(viewport => setViewport(viewport))}
                     mapStyle="mapbox://styles/mapbox/streets-v11"
-                    mapboxApiAccessToken="pk.eyJ1IjoidHJpbmd1eWVuLTA0MDE5OSIsImEiOiJja3cxczY0YzExemliMm5vMTEwNWs4ZmdiIn0.FyttIamZC9Th2D-vrexluQ"
+                    mapboxApiAccessToken="pk.eyJ1IjoidHJpbmd1eWVuLTA0MDE5OSIsImEiOiJja3dwdnc5cDMwZ292MnZsYzdhMjVkdDB2In0.HrBMFMkcbiWCwP3Hr0y3kw"
                 >
                     {showPopup && (
                         <Popup

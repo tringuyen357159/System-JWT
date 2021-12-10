@@ -69,7 +69,6 @@ export const editStudentSuccess = (data) => {
     }
 }
 
-
 export const updateStudentSuccess = (data) => {
     console.log(data);
     return async (dispatch, getState) => {

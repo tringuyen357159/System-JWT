@@ -23,3 +23,47 @@ Content-Type: application/json
 {
    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MTg0MTA0OTUwNmFjMDM0OGZjNDM2ZDgiLCJ1c2VybmFtZSI6InRyaW5ndXllbiIsImlhdCI6MTYzNjY3ODg5NH0.zK1jb7_aVY2cB1Uwp1AzV-TbKrsR4T5_WxzbW3wfMvI"
 }
+
+
+###
+POST http://localhost:5000/api/student/create
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MTgzYWEwM2VlYTlkYmUzMjQ1MmNhMzUiLCJ1c2VybmFtZSI6ImFkbWluIiwiaWF0IjoxNjM4ODYzNDIwLCJleHAiOjE2Mzg4NzQyMjB9.QIMM8SG6Csj8p1qb9riKgAXyBl1oWD1C08Ma_Goo_7w
+
+{
+   "name": "Lương Minh Trang",
+   "age": "38",
+   "mark": "9.3",
+   "city": "Huế",
+   "gender": "false"
+}
+
+###
+PUT http://localhost:5000/api/student/update/61af1fa667cdbc7de0196308
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MTgzYWEwM2VlYTlkYmUzMjQ1MmNhMzUiLCJ1c2VybmFtZSI6ImFkbWluIiwiaWF0IjoxNjM4ODk0MDAwLCJleHAiOjE2Mzg4OTQ2MDB9.t3UclgTug5EnBPJfyUWVEtzXhEenslvMy708o-VJScE
+
+{
+   "name": "Nguyễn Minh Toàn",
+   "age": "22",
+   "mark": "7.6",
+   "city": "Hà Nội",
+   "gender": "0"
+}
+
+
+###
+GET http://localhost:5000/api/student/getAll
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MTgzYWEwM2VlYTlkYmUzMjQ1MmNhMzUiLCJ1c2VybmFtZSI6ImFkbWluIiwiaWF0IjoxNjM4ODk0MDAwLCJleHAiOjE2Mzg4OTQ2MDB9.t3UclgTug5EnBPJfyUWVEtzXhEenslvMy708o-VJScE
+
+
+
+###
+DELETE http://localhost:5000/api/student/delete/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MTg0MTA0OTUwNmFjMDM0OGZjNDM2ZDgiLCJ1c2VybmFtZSI6InRyaW5ndXllbiIsImlhdCI6MTYzODg0NDg0MSwiZXhwIjoxNjM4ODU1NjQxfQ.BJ9wHgtC0A9lSxgzvh2EevTJksgZt3h7czQPH0MXO3k
+
+
+###
+GET http://localhost:5000/api/student/find/61aec9df98115c5ff0b9c16d
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MTg0MTA0OTUwNmFjMDM0OGZjNDM2ZDgiLCJ1c2VybmFtZSI6InRyaW5ndXllbiIsImlhdCI6MTYzODg0NDg0MSwiZXhwIjoxNjM4ODU1NjQxfQ.BJ9wHgtC0A9lSxgzvh2EevTJksgZt3h7czQPH0MXO3k
+
